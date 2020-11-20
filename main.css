@@ -1,19 +1,28 @@
-body, html {
+body,
+html {
     margin: 0;
     padding: 0;
     font-family: Roboto;
     scroll-behavior: smooth;
 }
 
+::-webkit-scrollbar {
+    width: 15px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #F9A826;
+}
+
 .title {
-    margin-left: 200px;
+    margin-left: 85px;
     margin-top: 100px;
     margin-bottom: 0;
     font-size: 400%;
 }
 
 .subtitle {
-    margin-left: 200px;
+    margin-left: 85px;
     margin-bottom: 200px;
 }
 
@@ -29,6 +38,10 @@ body, html {
     flex-direction: column;
 }
 
+h2 {
+    color: #F9A826
+}
+
 a {
     text-decoration: none;
     color: black;
@@ -39,17 +52,20 @@ a {
     height: 50px;
     border-radius: 5px;
     box-shadow: -2px 2px 5px #999;
+    display: flex;
     justify-content: flex-start;
     align-items: center;
     margin-bottom: 50px;
     font-size: 180%;
 }
-.episodio:hover{
+
+.episodio:hover {
     cursor: pointer;
 }
 
-
 .player_view {
+    margin-left: 10px;
+    margin-right: 10px;
     visibility: hidden;
     border-radius: 5px;
     box-shadow: -2px 2px 5px #999;
@@ -86,6 +102,7 @@ a {
         box-shadow: -2px 2px 5px #999;
     }
 }
+
 @media only screen and (max-width: 712px) {
     .title {
         margin-left: 10px;
@@ -97,5 +114,4 @@ a {
         margin-left: 10px;
         margin-bottom: 100px;
     }
-    
 }

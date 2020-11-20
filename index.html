@@ -7,54 +7,47 @@
     <title>Podcast</title>
     <link rel="stylesheet" href="main.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="favicon.png">
     <script src="main.js"></script>
-
 </head>
 
 <body>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <div>
-        <h1 class="title">Clan podcast</h1>
-        <h2 class="subtitle">Cammino di avvento 2020</h2>
+        <h1 class="title">Il podClan</h1>
+        <h2 class="subtitle">Cammino di avvento 2020 | I salmi</h2>
     </div>
     <div class="main">
         <div class="episodi">
             <div class="episodio" onclick="_open('primo')">
-                <div><a href="#player">Primo episodio</a></div>
+                <div>Primo episodio</div>
             </div>
             <div class="episodio" onclick="_open('secondo')">
-                <div><a href="#player">In arrivo...</a></div>
+                <div>In arrivo...</div>
             </div>
             <div class="episodio">
-                <div><a href="#player">In arrivo...</a></div>
+                <div>In arrivo...</div>
             </div>
         </div>
         <div>
-            <img width="100%" src="music.svg" alt="">
+            <img width="100%" src="image.svg" alt="">
         </div>
     </div>
-        <div id="player" class="player_view">
-            <div>
-                <h1 id="title" class="">Episodio 1</h1>
-                <div class="a">
-                    <h1 id="description">Lorem ipsum dolor sit, amet consectetur.</h1>
-                    <audio id="mp3" controls src="">
-                    </audio>
-                </div>
-            </div>
-            <div class="b">
-                <h2>Salmo:</h2>
-                <h3 id="salmo">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat est suscipit ab
-                    ipsum eos
-                    deleniti porro aperiam minima praesentium sapiente quo architecto consequatur voluptas
-                    exercitationem nemo, culpa possimus dignissimos quae.</h3>
-                <h2>Commento:</h2>
-                <h3 id="commento">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat harum neque,
-                    illo molestiae
-                    cupiditate nulla officiis sunt alias, incidunt impedit dolores quia sequi facere magni. Dolorum
-                    temporibus doloribus iure aliquam.</h3>
+    <div id="player" class="player_view">
+        <div>
+            <h1 id="title" class="">Episodio 1</h1>
+            <div class="a">
+                <h1 id="description">Lorem ipsum dolor sit, amet consectetur.</h1>
+                <audio id="mp3" controls src="">
+                </audio>
             </div>
         </div>
+        <div class="b">
+            <h2>Salmo:</h2>
+            <p id="salmo">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat est suscipit ab ipsum eos deleniti porro aperiam minima praesentium sapiente quo architecto consequatur voluptas exercitationem nemo, culpa possimus dignissimos quae.</p>
+            <h2>Commento:</h2>
+            <p id="commento">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat harum neque, illo molestiae cupiditate nulla officiis sunt alias, incidunt impedit dolores quia sequi facere magni. Dolorum temporibus doloribus iure aliquam.</p>
+        </div>
+    </div>
     </div>
     </div>
 </body>

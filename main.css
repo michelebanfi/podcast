@@ -8,8 +8,13 @@ body, html {
 .title {
     margin-left: 200px;
     margin-top: 100px;
-    margin-bottom: 200px;
+    margin-bottom: 0;
     font-size: 400%;
+}
+
+.subtitle {
+    margin-left: 200px;
+    margin-bottom: 200px;
 }
 
 .main {
@@ -23,45 +28,74 @@ body, html {
     display: flex;
     flex-direction: column;
 }
-a{
+
+a {
     text-decoration: none;
     color: black;
 }
+
 .episodio {
-    width: 500px;
+    width: 40vh;
     height: 50px;
     border-radius: 5px;
     box-shadow: -2px 2px 5px #999;
     justify-content: flex-start;
     align-items: center;
     margin-bottom: 50px;
-    font-size: 200%;
+    font-size: 180%;
+}
+.episodio:hover{
+    cursor: pointer;
 }
 
-.player {
-    display: flex;
-    width: 100%;
-    height: 100vh;
-    justify-content: space-around;
-    margin-bottom: 200px;
-}
 
 .player_view {
-    height: 95%;
-    width: 95%;
+    visibility: hidden;
     border-radius: 5px;
     box-shadow: -2px 2px 5px #999;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    margin-bottom: 50px;
+    min-height: 500px;
 }
+
 .players {
     display: flex;
     flex-direction: row;
-    margin-bottom: 200px;
 }
-.a{
-    margin-left: 100px;
-    margin-top: 300px;
+
+.b {
+    max-width: 50%;
 }
-.b{
-    margin-left: 200px;
-    width: 40%;
+
+@media only screen and (max-width: 1230px) {
+    .main {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-bottom: 200px;
+    }
+    .player_view {
+        height: auto;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        border-radius: 5px;
+        box-shadow: -2px 2px 5px #999;
+    }
+}
+@media only screen and (max-width: 712px) {
+    .title {
+        margin-left: 10px;
+        margin-top: 10px;
+        margin-bottom: 0;
+        font-size: 300%;
+    }
+    .subtitle {
+        margin-left: 10px;
+        margin-bottom: 100px;
+    }
+    
 }

@@ -80,6 +80,102 @@ const array = [{
     Questo è il suo modo di aiutarci: stare nel dolore con noi senza mai lasciarci soli.",
     pdf: '129.pdf',
 },
+{
+    mp3: 'podcastEp3.mp3',
+    title: 'Episodio 3',
+    description: 'Salmo 22',
+
+    salmo: 'Al maestro del coro. Sull\'aria: «Cerva dell\'aurora». \
+    Salmo. Di Davide. \
+    «Dio mio, Dio mio, perché mi hai abbandonato? \
+    Tu sei lontano dalla mia salvezza»: \
+    sono le parole del mio lamento. \
+    Dio mio, invoco di giorno e non rispondi, \
+    grido di notte e non trovo riposo. \
+    Eppure tu abiti la santa dimora,\
+    tu, lode di Israele.\
+    In te hanno sperato i nostri padri,\
+    hanno sperato e tu li hai liberati;\
+    a te gridarono e furono salvati,\
+    sperando in te non rimasero delusi.\
+    Ma io sono verme, non uomo,\
+    infamia degli uomini, rifiuto del mio popolo.\
+    Mi scherniscono quelli che mi vedono,\
+    storcono le labbra, scuotono il capo:\
+    «Si è affidato al Signore, lui lo scampi;\
+    lo liberi, se è suo amico».\
+    Sei tu che mi hai tratto dal grembo,\
+    mi hai fatto riposare sul petto di mia madre.\
+    Al mio nascere tu mi hai raccolto,\
+    dal grembo di mia madre sei tu il mio Dio.\
+    Da me non stare lontano,\
+    poiché l\'angoscia è vicina\
+    e nessuno mi aiuta.\
+    Mi circondano tori numerosi,\
+    mi assediano tori di Basan.\
+    Spalancano contro di me la loro bocca\
+    come leone che sbrana e ruggisce.\
+    Come acqua sono versato,\
+    sono slogate tutte le mie ossa.\
+    Il mio cuore è come cera,\
+    si fonde in mezzo alle mie viscere.\
+    È arido come un coccio il mio palato,\
+    la mia lingua si è incollata alla gola,\
+    su polvere di morte mi hai deposto.\
+    Un branco di cani mi circonda,\
+    mi assedia una banda di malvagi;\
+    hanno forato le mie mani e i miei piedi,\
+    posso contare tutte le mie ossa.\
+    Essi mi guardano, mi osservano:\
+    si dividono le mie vesti,\
+    sul mio vestito gettano la sorte.\
+    Ma tu, Signore, non stare lontano,\
+    mia forza, accorri in mio aiuto.\
+    Scampami dalla spada,\
+    dalle unghie del cane la mia vita.\
+    Salvami dalla bocca del leone\
+    e dalle corna dei bufali.\
+    Annunzierò il tuo nome ai miei fratelli,\
+    ti loderò in mezzo all\'assemblea.\
+    Lodate il Signore, voi che lo temete,\
+    gli dia gloria la stirpe di Giacobbe,\
+    lo tema tutta la stirpe di Israele;\
+    perché egli non ha disprezzato\
+    né sdegnato l\afflizione del misero,\
+    non gli ha nascosto il suo volto,\
+    ma, al suo grido d\'aiuto, lo ha esaudito.\
+    Sei tu la mia lode nella grande assemblea,\
+    scioglierò i miei voti davanti ai suoi fedeli.\
+    I poveri mangeranno e saranno saziati,\
+    loderanno il Signore quanti lo cercano:\
+    «Viva il loro cuore per sempre».\
+    Ricorderanno e torneranno al Signore\
+    tutti i confini della terra,\
+    si prostreranno davanti a lui\
+    tutte le famiglie dei popoli.\
+    Poiché il regno è del Signore,\
+    egli domina su tutte le nazioni.\
+    A lui solo si prostreranno quanti dormono sotto terra,\
+    davanti a lui si curveranno\
+    quanti discendono nella polvere.\
+    E io vivrò per lui,\
+    lo servirà la mia discendenza.\
+    Si parlerà del Signore alla generazione che viene;\
+    annunzieranno la sua giustizia;\
+    al popolo che nascerà diranno:\
+    «Ecco l\'opera del Signore!».'
+    ,
+
+    commento: "Nel salmo c’è la ricerca di un Dio che pare non esista.\
+    Il salmo però continua dicendo che l’uomo, nel dolore ma anche nella gioia sente il bisogno di cercare questo Dio, che a volte viene trascurato e lasciato nel vuoto.\
+    \“Dio mio, Dio mio, perché mi hai abbandonato?\” è il verso con cui si apre questo salmo.\
+    Sicuramente questa domanda è scatenata dal dolore, tanto forte e potente che porta l’uomo a credere che Dio se ne sia andato, lasciandolo solo.\
+    Questa supplica, rivolta al Signore si evolve durante il salmo in una ricerca di Dio tramite la sofferenza.\
+    La ricerca non sarà però vana: l’uomo si accorge che Dio non disprezza la sua sofferenza, una rivelazione che porta gioia nell’animo, Dio non ha smesso di mostrarci il suo volto.\
+    Logicamente Dio non vuole il nostro dolore, però l’uomo ha bisogno di questo sentimento perché è parte della sua natura e necessario alla sua crescita.\
+    Questa è una risposta possibile, ma secondo voi \“Se c’è Dio, perchè c’è sofferenza?\”",
+    pdf: '22.pdf',
+},
 ]
 
 function _open(title) {
@@ -101,6 +197,16 @@ function _open(title) {
             document.getElementById('title').innerHTML = array[1].title;
             document.getElementById('description').innerHTML = array[1].description;
             document.getElementById('pdf').href = array[1].pdf;
+            document.getElementById('player').style.visibility = 'visible';
+            document.getElementById('player').scrollIntoView();
+            break;
+        case 'terzo':
+            document.getElementById("commento").innerHTML = array[2].commento;
+            document.getElementById("salmo").innerHTML = array[2].salmo;
+            document.getElementById('mp3').src = array[2].mp3;
+            document.getElementById('title').innerHTML = array[2].title;
+            document.getElementById('description').innerHTML = array[2].description;
+            document.getElementById('pdf').href = array[2].pdf;
             document.getElementById('player').style.visibility = 'visible';
             document.getElementById('player').scrollIntoView();
             break;

@@ -246,6 +246,53 @@ const array = [
       Quale dovrebbe essere il destino di un uomo senza la speranza della salvezza di Dio, se non un oblio di peccati e incertezze?',
     pdf: "50.pdf",
   },
+  {
+    mp3: "podcastEp5.mp3",
+    title: "Episodio 5",
+    description: "Cantico di Zaccaria",
+
+    salmo:
+      "Zaccaria, suo padre, fu colmato di Spirito Santo e profetò dicendo:\
+      \"Benedetto il Signore, Dio d'Israele,\
+      perché ha visitato e redento il suo popolo,\
+      e ha suscitato per noi un Salvatore potente\
+      nella casa di Davide, suo servo,\
+       come aveva detto\
+      per bocca dei suoi santi profeti d'un tempo:\
+      salvezza dai nostri nemici,\
+      e dalle mani di quanti ci odiano.\
+      Così egli ha concesso misericordia ai nostri padri\
+      e si è ricordato della sua santa alleanza,\
+      del giuramento fatto ad Abramo, nostro padre,\
+      di concederci, liberati dalle mani dei nemici,\
+      di servirlo senza timore, in santità e giustizia\
+      al suo cospetto, per tutti i nostri giorni.\
+      E tu, bambino, sarai chiamato profeta dell'Altissimo\
+      perché andrai innanzi al Signore a preparargli le strade,\
+      per dare al suo popolo la conoscenza della salvezza\
+      nella remissione dei suoi peccati.\
+      Grazie alla tenerezza e misericordia del nostro Dio,\
+      ci visiterà un sole che sorge dall'alto,\
+      per risplendere su quelli che stanno nelle tenebre\
+      e nell'ombra di morte,\
+      e dirigere i nostri passi\
+      sulla via della pace\".",
+
+    commento:
+      "Il salmo inizia con la parola bene - detto  ovvero dire bene senza lamentarsi e giudicare e ciò\
+       può essere fatto solo grazie all’aiuto di Dio. Dire il bene è il principio per fare del bene. \
+      Ci insegna che noi non bastiamo a noi stessi e senza dio che sostiene la nostra sete ci appoggiamo\
+       alle cose o persone che peró non sono abbastanza forti o in grado di sostenerci.\
+      Dal pezzo:”Anche se costoro si dimenticassero, io invece non ti dimenticherò mai”, \
+      fa capire che Dio nonostante debba pensare a tutti ha sempre tempo per ognuno di noi e non ci dimentica.\
+      Ci visiterà dall’alto un sole che sorge fa capire la forza e il calore che dio ci fa provare ed è collegato \
+      alla parte seguente ed ovvero che questo sole che è dio non abbandonerà anche coloro che sono nelle tenebre, \
+      quindi non farà una selezione tra chi è stato bravo ed altruista e chi no.\
+      Il salmo finisce con Dio che sarà sempre pronto ad indirizzarsi verso la strada\
+      giusta appena  lo vorremo e sarà la nostra guida per la pace. È come un guard-rail \
+      che quando sbaglieremo potrà salvarci e reindirizzarci verso la strada giusta.",
+    pdf: "Zaccaria.pdf",
+  },
 ];
 
 function _open(title) {
@@ -287,6 +334,16 @@ function _open(title) {
       document.getElementById("title").innerHTML = array[3].title;
       document.getElementById("description").innerHTML = array[3].description;
       document.getElementById("pdf").href = array[3].pdf;
+      document.getElementById("player").style.visibility = "visible";
+      document.getElementById("player").scrollIntoView();
+      break;
+      case "quinto":
+      document.getElementById("commento").innerHTML = array[4].commento;
+      document.getElementById("salmo").innerHTML = array[4].salmo;
+      document.getElementById("mp3").src = array[4].mp3;
+      document.getElementById("title").innerHTML = array[4].title;
+      document.getElementById("description").innerHTML = array[4].description;
+      document.getElementById("pdf").href = array[4].pdf;
       document.getElementById("player").style.visibility = "visible";
       document.getElementById("player").scrollIntoView();
       break;
